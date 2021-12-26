@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudolphomycin</title>
+    <link rel="stylesheet" href="molecule.css">
+    <script type="importmap">
+        {
+            "imports": {
+            "three": "../node_modules/three/build/three.module.js"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="frame">
+        <div id="result">
+            <canvas id="molecule"></canvas>
+        </div>
+        <div id="description">
+            This is an amazing molecule
+        </div>
+    </div>
+    <!-- <script type="module" src="molecule.js"></script> -->
+    <script type="module">
+        import { displayMolecule } from './molecule.js'
+        displayMolecule(document.getElementById('molecule'), 'molecules/rudolphomycin.glb');
+    </script>
+</body>
+
+</html>
