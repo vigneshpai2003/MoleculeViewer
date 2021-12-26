@@ -7,13 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rudolphomycin</title>
     <link rel="stylesheet" href="molecule.css">
-    <script type="importmap">
-        {
-            "imports": {
-            "three": "./node_modules/three/build/three.module.js"
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -25,7 +18,6 @@
             This is an amazing molecule called Rudolphomycin
         </div>
     </div>
-    <!-- <script type="module" src="molecule.js"></script> -->
     <script type="module">
         import { displayMolecule } from './molecule.js'
         displayMolecule(document.getElementById('molecule'), 'molecules/rudolphomycin.glb');

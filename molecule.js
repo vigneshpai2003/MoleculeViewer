@@ -1,8 +1,8 @@
-import * as THREE from 'three';
+import * as THREE from 'https://cdn.skypack.dev/three@0.136.0/build/three.module.js';
 
-import { RoomEnvironment } from './node_modules/three/examples/jsm/environments/RoomEnvironment.js';
-import { OrbitControls } from './node_modules/three/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'https://cdn.skypack.dev/three@0.136.0/examples/jsm/environments/RoomEnvironment.js';
+import { OrbitControls } from 'https://cdn.skypack.dev/three@0.136.0/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.136.0/examples/jsm/loaders/GLTFLoader.js';
 
 function displayMolecule(canvas, molecule) {
     let camera, scene, renderer;
