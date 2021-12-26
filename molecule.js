@@ -22,7 +22,7 @@ function displayMolecule(canvas, molecule) {
         renderer.outputEncoding = THREE.sRGBEncoding;
 
 
-        camera = new THREE.PerspectiveCamera(45, 1, 0.25, 40);
+        camera = new THREE.PerspectiveCamera(45, 1, 0.25, 60);
         camera.position.set(-3, 10, -10);
 
         const environment = new RoomEnvironment();
@@ -47,7 +47,7 @@ function displayMolecule(canvas, molecule) {
         const controls = new OrbitControls(camera, renderer.domElement);
         controls.addEventListener('change', render);
         controls.minDistance = 2;
-        controls.maxDistance = 25;
+        controls.maxDistance = 35;
         controls.target.set(0, 0, 0);
         controls.update();
 
