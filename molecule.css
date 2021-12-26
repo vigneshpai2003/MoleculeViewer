@@ -1,27 +1,38 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-body { margin: 0; }
+body {
+  margin: 0;
+}
 
-.frame { 
+.heading {
+  font-family: monospace;
+  padding: 0.5em;
+  background: #444;
+  color: white;
+  text-align: center;
+  font-size: xxx-large;
+}
+
+.frame {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
 }
 
-.frame>* {
-  flex: 1 1 50%;
-}
-
-canvas { 
-  width: 100%;
+canvas {
+  display: inline;
   height: 100%;
+  width: 100%;
 }
 
-#description {
+.description {
   font-family: monospace;
-  padding: .5em;
+  padding: 0.5em;
   background: #444;
   color: white;
 }
-
