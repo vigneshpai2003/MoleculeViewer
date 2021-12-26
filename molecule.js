@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 
-import { RoomEnvironment } from '../node_modules/three/examples/jsm/environments/RoomEnvironment.js';
-import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { RoomEnvironment } from './node_modules/three/examples/jsm/environments/RoomEnvironment.js';
+import { OrbitControls } from './node_modules/three/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
 function displayMolecule(canvas, molecule) {
     let camera, scene, renderer;
