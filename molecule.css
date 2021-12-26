@@ -19,9 +19,10 @@ body {
 .frame {
   display: flex;
   width: 100vw;
-  height: 60vh;
+  height: 70vh;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 canvas {
@@ -30,9 +31,28 @@ canvas {
   width: 100%;
 }
 
+.label {
+	z-index: 1;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-color: rgba(240, 248, 255, 0.486);
+	padding: 10px;
+	border-radius: 15px;
+}
+
 .description {
   font-family: monospace;
   padding: 0.5em;
   background: #444;
   color: white;
+}
+
+.color-box {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: relative;
+	margin: 5px;
+	vertical-align: middle;
 }
